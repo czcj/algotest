@@ -1,0 +1,16 @@
+server:
+  port: 9879
+spring:
+  thymeleaf:
+    cache: false
+  redis:
+#      host: 172.16.101.153
+#      host: 10.31.210.18
+      host: algo-irsapi.redis.rds.aliyuncs.com
+#      host: 106.14.214.32
+      port: 6379
+#      password: 86a1b907d54bf7010394bf316e183e67
+#      password: algoredis2018TEST
+      password: Pzh6537projectx
+#      password: projectx2018
+      database: 10

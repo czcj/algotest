@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="../echarts.js"></script>
+  <script src="../jquery-3.3.1.min.js"></script>
+  <title>Title</title>
+</head>
+<body>
+  <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+
+  <table>
+    <tr>
+      <td></td>
+      <td> <input id = size type="text">/kb <button id="sure1">sure</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <div>写入时间图</div>
+        <div id="writeDiv" style="width: 600px;height:400px;"></div>
+      </td>
+      <td>
+        <div>更新时间图</div>
+        <div id="updateDiv" style="width: 600px;height:400px;"></div>
+      </td>
+      <td>
+        <div>读取时间图</div>
+        <div id="readDiv" style="width: 600px;height:400px;"></div>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button id="sure2">sure</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <div>max连续50次写入时间图</div>
+        <div id="writeArrDiv" style="width: 600px;height:400px;"></div>
+      </td>
+      <td>
+        <div>max连续50次更新时间图</div>
+        <div id="updateArrDiv" style="width: 600px;height:400px;"></div>
+      </td>
+      <td>
+        <div>max连续50次读数据时间图</div>
+        <div id="readArrDiv" style="width: 600px;height:400px;"></div>
+      </td>
+    </tr>
+  </table>
+
+
+
+  <script src="../page/redisTest.js"></script>
+</body>
+</html>
